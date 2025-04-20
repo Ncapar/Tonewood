@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tonewood Selector Tool</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <h1>Tonewood Selector Tool</h1>
+    <p>Select tonewoods to compare their EQ, harmonic decay, and envelope.</p>
+    
+    <div id="controls">
+        <label><input type="checkbox" value="Mahogany"> Mahogany</label>
+        <label><input type="checkbox" value="Swamp Ash"> Swamp Ash</label>
+        <label><input type="checkbox" value="Alder"> Alder</label>
+        <label><input type="checkbox" value="Ziricote"> Ziricote</label>
+        <label><input type="checkbox" value="Purpleheart"> Purpleheart</label>
+        <label><input type="checkbox" value="Basswood"> Basswood</label>
+        <label><input type="checkbox" value="Koa"> Koa</label>
+        <label><input type="checkbox" value="Limba"> Limba</label>
+        <label><input type="checkbox" value="Maple"> Maple</label>
+        <label><input type="checkbox" value="Ebony"> Ebony</label>
+        <label><input type="checkbox" value="Walnut"> Walnut</label>
+        <label><input type="checkbox" value="Okoume"> Okoume</label>
+        <button onclick="updateCharts()">Update Charts</button>
+    </div>
+
+    <div class="chart-container">
+        <canvas id="eqChart"></canvas>
+        <canvas id="harmonicsChart"></canvas>
+        <canvas id="envelopeChart"></canvas>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
